@@ -28,7 +28,7 @@ class List extends Component {
     }
     likeItem= (name)=>{
         this.setState({
-            data: this.data.map((item,index)=>{
+            data: this.state.data.map((item,index)=>{
                 if(item.login == name ){
                     item.like = !item.like;
                 }
